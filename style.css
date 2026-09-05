@@ -1,0 +1,158 @@
+
+/* --- Pengaturan Dasar & Variabel Warna --- */
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --border-color: #e5e7eb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* --- Header / Bagian Utama --- */
+header {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* --- Section / Kartu Konten --- */
+section {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+/* --- Gambar Profil Utama --- */
+section img[alt="Foto Vanzz"] {
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    border: 4px solid var(--border-color);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* --- List & Teks --- */
+ul, ol {
+    padding-left: 20px;
+    color: var(--text-muted);
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* --- Blockquote / Motivasi --- */
+blockquote {
+    background-color: #eef2ff;
+    border-left: 5px solid var(--primary-color);
+    margin: 0 0 10px 0;
+    padding: 12px 15px;
+    border-radius: 0 8px 8px 0;
+    color: var(--primary-hover);
+}
+
+/* --- Profile Container (Bagian Tambahan) --- */
+.profile-container {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f9fafb;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.profile-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.profile-item p {
+    margin: 0;
+    font-size: 0.95krem;
+    color: var(--text-muted);
+}
+
+/* --- Tautan / Kontak (Email & IG) --- */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a p {
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+a p:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+/* --- Menghilangkan Garis <hr> Bawaan --- */
+hr {
+    display: none; /* Digantikan dengan jarak margin antar section agar lebih bersih */
+}
